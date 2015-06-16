@@ -1,0 +1,311 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#ff000000"
+    android:weightSum="1.0"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/displayId"
+            android:autoText="true"
+            android:gravity="bottom|end"
+            android:textColor="#ffffffff"
+            android:textSize="25sp"
+            android:background="#ff006699"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:textIsSelectable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.8">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1.0">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/del"
+                    android:id="@+id/operationDelId"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_span="2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sin"
+                    android:id="@+id/operationSinId"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cos"
+                    android:id="@+id/operationCosId"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tan"
+                    android:id="@+id/operationTanId"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i"
+                    android:id="@+id/operationIId"
+                    android:layout_column="3"
+                    android:layout_row="4"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ln"
+                    android:id="@+id/operationLnId"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log"
+                    android:id="@+id/operationLogId"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pi"
+                    android:id="@+id/operationPiId"
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/e"
+                    android:id="@+id/operationEId"
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/percent"
+                    android:id="@+id/operationPercentId"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/factorial"
+                    android:id="@+id/operationFactorialId"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/root"
+                    android:id="@+id/operationRootId"
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/power"
+                    android:id="@+id/operationPowerId"
+                    android:layout_column="3"
+                    android:layout_row="2"
+                    android:background="#ff006699"
+                    android:textColor="#ffffffff"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>
